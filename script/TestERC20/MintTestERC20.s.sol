@@ -9,7 +9,7 @@ contract MintTestERC20Script is Script {
     uint internal constant mintAmount = 1e14;
     uint internal constant transferAmount = 1e12;
     address internal recipient = makeAddr("recipient");
-    address internal testERC20Address; // Define your deployed TestERC20's address
+    address internal testERC20Address = 0xF45dA7CdB0663b8bB78459c9d07bdd7e9FC33385; // Define your deployed TestERC20's address
 
     function run() external {
         require(testERC20Address != address(0), "Before running this test please define variable testERC20Address with the address of your deployed TestERC20.");
